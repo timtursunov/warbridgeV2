@@ -40,15 +40,19 @@ $('.owl-carousel').owlCarousel({
 let lastScrollTop = 0;
 let header = document.querySelector('#head');
 
-window.addEventListener('scroll', (() => {
-    let scrollTop = window.pageYOffset || document.documentElement.scrollTop;
-    if(scrollTop>lastScrollTop){
-        header.style.top = '-91px'
-    } else {
-        header.style.top = '0'
-    }
-    lastScrollTop = scrollTop
-}))
+if (screen.width > 1023) {
+    window.addEventListener('scroll', (() => {
+        let scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+        if(scrollTop>lastScrollTop){
+            header.style.top = '-91px'
+        } else {
+            header.style.top = '0'
+        }
+        lastScrollTop = scrollTop
+    }))
+} else {
+    console.log('hello')
+}
 //parallax effect
 let layer1 = document.querySelector('#layer1')
 let layer2 = document.querySelector('#layer2')
