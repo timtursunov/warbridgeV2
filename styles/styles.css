@@ -221,6 +221,9 @@ button p {
     opacity: 1;
     transition: 0.2 ease-in;
   }
+  .hero-text__container-mini--clicked {
+    opacity: 0.1;
+  }
   .hero-text__heading {
     font-size: 32px;
     line-height: 36px;
@@ -253,8 +256,6 @@ button p {
   }
   .hero-burger__nav {
     padding: 40px 30px 0 30px;
-    display: flex;
-    flex-wrap: wrap;
   }
   .hero-burger__nav a,
   .hero-burger__btn p {
@@ -262,10 +263,32 @@ button p {
     line-height: 17.5px;
   }
   .hero-burger__nav a {
-    width: 100%;
+    display: block;
   }
   .hero-burger__nav a:nth-child(2) {
     margin: 30px 0 40px 0;
+  }
+  .hero-burger__btn {
+    background-color: #211e1b;
+    width: 275px;
+    height: 50px;
+  }
+  .hero-burger__btn a {
+    color: white;
+  }
+  .header-burger__lines--clicked {
+    display: none;
+  }
+  .header-burger__close {
+    width: 20px;
+    height: 20px;
+    background-image: url("../assets/Icons/Close.png");
+    background-size: cover;
+    background-position: center;
+    display: none;
+  }
+  .header-burger__close--clicked {
+    display: flex;
   }
   /* clicking on burger */
   .hero-burger__text--clicked {

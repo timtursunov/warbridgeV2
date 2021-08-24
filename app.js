@@ -3,7 +3,8 @@ let navBurger = document.querySelector('.header-burger');
 let burgerText = document.querySelector('#burgerText');
 let burgerLines = Array.from(document.querySelectorAll('.header-burger__line')) ;
 let heroText = document.querySelector('.hero-text__container-mini');
-let headerBurger = document.querySelector('#headerBurger')
+let headerBurger = document.querySelector('.header-burger__lines')
+let closeIcon = document.querySelector('.header-burger__close')
 
 console.log(burgerLines)
 console.log(headerBurger)
@@ -11,9 +12,11 @@ console.log(headerBurger)
 navBurger.addEventListener('click', ()=> {
     console.log('gee')
     burgerText.classList.toggle('hero-burger__text--clicked');
+    heroText.classList.toggle('hero-text__container-mini--clicked')
     // headerBurger.removeChild(burgerLines)
     headerBurger.classList.toggle('.header-burger--cross');
-    headerBurger.removeChild(burgerLines)
+    headerBurger.classList.toggle('header-burger__lines--clicked')
+    closeIcon.classList.toggle('header-burger__close--clicked')
 
 })
 
