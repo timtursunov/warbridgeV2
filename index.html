@@ -7,6 +7,8 @@
     <title>warbridge.</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css" integrity="sha512-sMXtMNL1zRzolHYKEujM2AqCLUR9F2C4/05cdbxjjLSRvMQIciEPCQZo++nk7go3BtSuK9kfa/s+a4f4i5pLkw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.css" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.0.0/jquery.min.js"></script>
     <link rel="stylesheet" href="./styles/styles.css">
 </head>
 <body>
@@ -22,7 +24,7 @@
                                     <div class="header__logo"></div>
                                 </div>
                                 <div class="header__nav">
-                                    <a class="header__link" href="#">your journey</a>
+                                    <a class="header__link" href="#carousel">your journey</a>
                                     <a href=#ourteam class="header__link--middle header__link" >our team</a>
                                     <button class="header__btn">
                                         <a href="mailto:someone@yoursite.com" class="header__link">talk to us</a>
@@ -36,7 +38,6 @@
                                         <div class="header-burger--cross"></div>
                                     </div>
                                     <div class="header-burger__close">
-
                                     </div>
                                 </div>
                             </header>
@@ -44,7 +45,7 @@
                         <div id="burgerText" class="hero-burger__text">
                             <div class="hero-burger__nav">
                                 <a class="hero-burger__link" href="#journey">your journey</a>
-                                <a class="hero-burger__link--middle header__link" href=#>our team</a>
+                                <a class="hero-burger__link--middle header__link" href=#team>our team</a>
                                 <div>
                                     <button class="hero-burger__btn">
                                         <a class="hero-burger__link" href="">talk to us</a>
@@ -182,6 +183,7 @@
                                         <p >WHAT'S NEXT</p>
                                     </button>
                                 </div>
+                            
                             </div>
                             <div id="holderDivTwo" class="holder__slide holder__slide2">
                                 <div>
@@ -237,7 +239,7 @@
                 </div>
             </div>
         </section>
-        <section id="outeam" class="team">
+        <section id="team" class="team">
             <div class="team__wrap">
                 <div class="team__container">
                     <div class="team__text">
@@ -247,45 +249,129 @@
                     </div>
                     <div class="cards">
                         <div class="card left ">
-                            <div class="card__avatar card__avatar1"></div>
+                            <div class="card__avatar card__avatar1">
+                                <div class="card__icon-box card__icon-box1">
+                                    <div class="card__icon--opened card__icon--opened1"></div>
+                                </div>
+                                <p class="card__p--clicked card__p--clicked1"></p>
+                                <p class="card__p--clicked card__p--clicked-second1"></p>
+                                <div class="overlay overlay1">
+                                    <button id="btnAbout1">
+                                        <p><a href="#ex5" rel="modal:open">About Yazan</a></p>
+                                        <p>About Yazan</p>
+                                    </button>
+                                </div>
+                                <div id="ex5" class="modal">
+                                    <p class="card__modal--firstP">Andrew is a professional international consultant with presence in several countries. We work hand in hand with our clients, delivering at the coalface. Together, we crack some of the largest and most complex challenges in the public and private sectors, by pinpointing. We work hand in hand with our clients, delivering at the coalface.</p>
+                                    <p class="card__modal--secondP"> Our approach is not just about spreadsheets and mathematical skill: we help you see powerful truths about your organisation, so you know the actions we take together will be the right ones.</p>
+                                </div>
+                            </div>
                                 <div class="card__text">
                                     <h3 class="card__heading">Yazan Marmash</h3>
                                     <p class="card__p">Co-founder & managing director</p>
                                     <button class="card__btn--tablet">
-                                        <p>About</p>
+                                        <p><a class="card__btn--link" href="#ex1" rel="modal:open">About</a></p>
                                     </button>
                                 </div>
+                                <div id="ex1" class="modal">
+                                    <p class="card__modal--firstP">Yazan is a professional international consultant with presence in several countries. We work hand in hand with our clients, delivering at the coalface. Together, we crack some of the largest and most complex challenges in the public and private sectors, by pinpointing. We work hand in hand with our clients, delivering at the coalface.</p>
+                                    <p class="card__modal--secondP"> Our approach is not just about spreadsheets and mathematical skill: we help you see powerful truths about your organisation, so you know the actions we take together will be the right ones.</p>
+                                </div>
                             </div>
-                            <div class="card ">
-                                <div class="card__avatar card__avatar2"></div>
+                            <div class="card">
+                                <div class="card__avatar card__avatar2">
+                                    <div class="card__icon-box card__icon-box2">
+                                        <div class="card__icon--opened card__icon--opened2"></div>
+                                    </div>
+                                    <p class="card__p--clicked card__p--clicked2"></p>
+                                    <p class="card__p--clicked card__p--clicked-second2"></p>
+                                    <div class="overlay overlay2">
+                                        <button id="btnAbout2">
+                                            <p><a href="#ex6" rel="modal:open">About Marcus</a></p>
+                                            <p>About Marcus</p>
+                                        </button>
+                                    </div>
+                                    <div id="ex6" class="modal">
+                                        <p class="card__modal--firstP">Marcus is a professional international consultant with presence in several countries. We work hand in hand with our clients, delivering at the coalface. Together, we crack some of the largest and most complex challenges in the public and private sectors, by pinpointing. We work hand in hand with our clients, delivering at the coalface.</p>
+                                        <p class="card__modal--secondP"> Our approach is not just about spreadsheets and mathematical skill: we help you see powerful truths about your organisation, so you know the actions we take together will be the right ones.</p>
+                                    </div>
+                                </div>
                                 <div class="card__text">
                                     <h3 class="card__heading">Marcus Lee</h3>
                                     <p class="card__p">Co-founder & managing director</p>
                                     <button class="card__btn--tablet">
-                                        <p>About</p>
+                                        <p><a href="#ex2" rel="modal:open">About</a></p>
                                     </button>
+                                </div>
+                                <div id="ex2" class="modal">
+                                    <p class="card__modal--firstP">Markus is a professional international consultant with presence in several countries. We work hand in hand with our clients, delivering at the coalface. Together, we crack some of the largest and most complex challenges in the public and private sectors, by pinpointing. We work hand in hand with our clients, delivering at the coalface.</p>
+                                    <p class="card__modal--secondP"> Our approach is not just about spreadsheets and mathematical skill: we help you see powerful truths about your organisation, so you know the actions we take together will be the right ones.</p>
                                 </div>
                             </div>
                         </div>
                     <div class="cards">
                         <div class="card left ">
-                            <div class="card__avatar card__avatar3"></div>
+                            <div class="card__avatar card__avatar3">
+                                <div class="card__icon-box card__icon-box3">
+                                    <div class="card__icon--opened card__icon--opened3"></div>
+                                </div>
+                                <p class="card__p--clicked card__p--clicked3"></p>
+                                <p class="card__p--clicked card__p--clicked-second3"></p>
+                                <div class="overlay overlay3 overlayClicked">
+                                    <div>
+                                        <button id="btnAbout3">
+                                            <p><a href="#ex7" rel="modal:open">About Emily</a></p>
+                                            <p>About Emily</p>
+                                        </button>
+                                    </div>
+                                    <div id="ex7" class="modal">
+                                        <p class="card__modal--firstP">Andrew is a professional international consultant with presence in several countries. We work hand in hand with our clients, delivering at the coalface. Together, we crack some of the largest and most complex challenges in the public and private sectors, by pinpointing. We work hand in hand with our clients, delivering at the coalface.</p>
+                                        <p class="card__modal--secondP"> Our approach is not just about spreadsheets and mathematical skill: we help you see powerful truths about your organisation, so you know the actions we take together will be the right ones.</p>
+                                    </div>
+                                </div>
+                            </div>
                                 <div class="card__text">
                                     <h3 class="card__heading">Emily Richards</h3>
                                     <p class="card__p">managing director</p>
                                     <button class="card__btn--tablet">
-                                        <p>About</p>
+                                        <p><a href="#ex3" rel="modal:open">About</a></p>
                                     </button>
+                                </div>
+                                <div id="ex3" class="modal">
+                                    <p class="card__modal--firstP">Markus is a professional international consultant with presence in several countries. We work hand in hand with our clients, delivering at the coalface. Together, we crack some of the largest and most complex challenges in the public and private sectors, by pinpointing. We work hand in hand with our clients, delivering at the coalface.</p>
+                                    <p class="card__modal--secondP"> Our approach is not just about spreadsheets and mathematical skill: we help you see powerful truths about your organisation, so you know the actions we take together will be the right ones.</p>
                                 </div>
                             </div>
                             <div class="card ">
-                                <div class="card__avatar card__avatar4"></div>
+                                <div class="card__avatar card__avatar4">
+                                    <div class="card__icon-box card__icon-box4">
+                                        <div class="card__icon--opened card__icon--opened4"></div>
+                                    </div>
+                                    <p class="card__p--clicked card__p--clicked4"></p>
+                                    <p class="card__p--clicked card__p--clicked-second4"></p>
+                                    <div class="overlay overlay4 overlayClicked">
+                                        <div>
+                                            <button id="btnAbout4">
+                                                <p><a href="#ex8" rel="modal:open">About Andrew</a></p>
+                                                <p>About Andrew</p>
+                                            </button>
+                                        </div>
+                                        <div id="ex8" class="modal">
+                                            <p class="card__modal--firstP">Andrew is a professional international consultant with presence in several countries. We work hand in hand with our clients, delivering at the coalface. Together, we crack some of the largest and most complex challenges in the public and private sectors, by pinpointing. We work hand in hand with our clients, delivering at the coalface.</p>
+                                            <p class="card__modal--secondP"> Our approach is not just about spreadsheets and mathematical skill: we help you see powerful truths about your organisation, so you know the actions we take together will be the right ones.</p>
+                                        </div>
+                                    </div>
+                                </div>
                                 <div class="card__text">
                                     <h3 class="card__heading">Andrew Michaels</h3>
                                     <p class="card__p">managing director</p>
                                     <button class="card__btn--tablet">
-                                        <p>About</p>
+                                        <p><a href="#ex4" rel="modal:open">About</a></p>
                                     </button>
+                                </div>
+                                <div id="ex4" class="modal">
+                                    <p class="card__modal--firstP">Markus is a professional international consultant with presence in several countries. We work hand in hand with our clients, delivering at the coalface. Together, we crack some of the largest and most complex challenges in the public and private sectors, by pinpointing. We work hand in hand with our clients, delivering at the coalface.</p>
+                                    <p class="card__modal--secondP"> Our approach is not just about spreadsheets and mathematical skill: we help you see powerful truths about your organisation, so you know the actions we take together will be the right ones.</p>
                                 </div>
                             </div>
                         </div>
@@ -330,18 +416,19 @@
                         </div>
                         <div class="contact__info">
                             <a href="contact@warbridge.eu">contact@warbridge.eu</a>
-                            <a href="#">+ 31 97 010 281 352</a>
+                            <a href="tel:+31-97-010-281-352">+ 31 97 010 281 352</a>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-
+        <div class="modal">
+            <a href="#ex1" rel="modal:open">Open Modal</a>
+        </div>
     </footer>
-
-
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js" integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.js"></script>
     <script src="./app.js"></script>
 </body>
 </html>
