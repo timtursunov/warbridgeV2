@@ -268,6 +268,10 @@ button p {
     width: 106px;
     height: 21px;
   }
+  .header__wrapper {
+    position: relative;
+    top: 16px;
+  }
   .header-burger {
     display: block;
   }
@@ -297,7 +301,7 @@ button p {
     z-index: 6545454654654654;
   }
   .hero-text {
-    margin-top: 76px;
+    margin-top: 90px;
   }
   .hero-text__container-mini {
     opacity: 1;
@@ -315,13 +319,13 @@ button p {
   .hero-text__description {
     font-size: 14px;
     line-height: 18px;
-    width: 201px;
+    width: 223px;
   }
   .hero-text__btn {
     background-color: #f6bf52;
     padding: 21px 51px;
     position: relative;
-    margin-top: 312px;
+    margin-top: 293px;
   }
   .hero-burger__text {
     display: none;
@@ -371,6 +375,10 @@ button p {
   }
   .header-burger__close--clicked {
     display: flex;
+  }
+  .hero-text__btn a {
+    font-size: 14px;
+    line-height: 18px;
   }
   /* clicking on burger */
   .hero-burger__text--clicked {
