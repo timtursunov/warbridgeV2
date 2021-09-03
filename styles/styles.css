@@ -383,6 +383,7 @@ button p {
   /* clicking on burger */
   .hero-burger__text--clicked {
     display: flex;
+    margin-top: 16px;
   }
   .header-burger--cross {
     display: none;
